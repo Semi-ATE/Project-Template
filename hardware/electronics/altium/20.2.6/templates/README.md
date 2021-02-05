@@ -1,0 +1,1 @@
+Next to the TDK templates generate templates for Semi-ATE with the Semi-ATE logo (ask diana for the logo)
