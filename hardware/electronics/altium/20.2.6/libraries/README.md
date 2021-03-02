@@ -1,21 +1,9 @@
 # Semi-ATE Altium Libraries
 
-## mechanical layers
+## GENERAL
 
-| Description | Top | Bottom |
-|:---------|:---:|:---:|
-| Board Outline | M1 | / |
-| Board Cutout | M2 | / |
-| Courtyard | M5 | M6 |
-| Designator | M9 | M10 |
-| 3D Body | M13 | M20 |
-| Component Center | M17 | M23 |
-| Dimensions | M18 | M22 |
+### Naming of components
 
-# GENERAL
-
-## Naming of components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  > Passive components should be named following this structure - TYPE_VALUE_CASE/FOOTPRIN_[SPECIFICATION]
 	Examples:
 		RES_2k7_0805 (Resistor, 2.7k, SMD, footprint 0805)
@@ -39,13 +27,12 @@
  > Other - Depending on case
 
 
-Naming of footprints
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Naming of footprints
+
 IPC-7351 standard is used for SMT. For TH components we stay as close to the standard as possible.
 
- 
-Designators of components
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Designators of components
+
 - R for resistors
 - C for capacitors
 - L for inductances
@@ -61,16 +48,16 @@ Designators of components
 - ST for standoffs
 	
 
-= SCHEMATIC View
+## SCHEMATIC View
 
-Symbol definitions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Symbol definitions
+
 - As a basic principle, a symbol should be drawn in logical way (signals goes from left to right, potential from top to bottom). But exceptions are allowed;
 - All pins have to be visible (e.g. no hidden power pins);
 - The symbol has to show the logical name and the physical pin number;
 
-Standard parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Standard parameters
+
 - Value [for passive components is the value, for active is the MFG P/N]
 - MFG
 - MFG P/N
@@ -82,20 +69,18 @@ Standard parameters
 - Part Type / Component Type 
 - Datasheet [As reference link]
 
+## FOOTPRINT View
 
-= FOOTPRINT View
-Mechanical Layers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Name 			/ TOP / BOT 	/ Description
+### Mechanical Layers
 
-Board Outline 	/ M1 / - 		/ Data for mill out of the board
-Board Cutout  	/ M2 / - 		/ Data for inner mill out of the board
-Courtyard 		/ M3 / M10 		/
-Designator 		/ M4 / M11 		/ Designator of component
-3D Body 		/ M5 / M12 		/ 3D view of the component
-Component Center/ M6 / M13 		/ Center of the component
-Dimensions 		/ M7 / M14 		/ Additional information for board manufacturer
-Hard Gold 		/ M8 / M15 		/ Marking of area for hard gold
-Design Guides 	/ M9 / M16 		/ Additional information for design process
-
-
+| Name | TOP | BOT | Description |
+|:---------:|:---:|:---:|:---------:|
+| Board Outline | M1 | - | Data for mill out of the board |
+| Board Cutout | M2 | - | Data for inner mill out of the board |
+| Courtyard | M3 | M10 |  |
+| Designator | M4 | M11 | Designator of component |
+| 3D Body | M5 | M12 | 3D view of the component |
+| Component Center | M6 | M13 | Center of the component |
+| Dimensions | M7 | M14 | Additional information for board manufacturer |
+| Hard Gold | M8 | M15 | Marking of area for hard gold |
+| Design Guides | M9 | M16 | Additional information for design process |
