@@ -4,9 +4,10 @@
 
 ### Naming of components
 
-Passive components should be named following this structure - TYPE_VALUE_CASE/FOOTPRIN_*[SPECIFICATION]*
+Passive components should be named following this structure - TYPE_VALUE_CASE/FOOTPRINT_*[SPECIFICATION]*
 
-	>Examples:
+	> Examples:
+	>
 	>	RES_2k7_0805 (Resistor, 2.7 k, SMD, footprint 0805)
 	>	RES_1R2_0207_1% (Resistor, 1.2 Ohm, TH, footprint 0207, 1%)
 	>	CAP_2U2_500MIL_Tan_35V (Capacitor, 2.2 uF, TH 500mil distance between holes, Tantalum, 35V)
