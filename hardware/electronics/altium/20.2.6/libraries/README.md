@@ -6,31 +6,27 @@
 
 Passive components should be named following this structure - TYPE_VALUE_CASE/FOOTPRIN_*[SPECIFICATION]*
 
-	Examples:
-	
-		RES_2k7_0805 (Resistor, 2.7k, SMD, footprint 0805)
-		
-		RES_1R2_0207_1% (Resistor, 1.2Ohm, TH, footprint 0207, 1%)
-		
-		CAP_2U2_500MIL_Tan_35V (Capacitor, 2.2\ |micro|\ F, TH 500mil distance between holes, Tantalum, 35V)
-		
-		IND_4m7_0603 (Inductance, 4.7 mH, SMD, footprint 0603)
+	>Examples:
+	>	RES_2k7_0805 (Resistor, 2.7 k, SMD, footprint 0805)
+	>	RES_1R2_0207_1% (Resistor, 1.2 Ohm, TH, footprint 0207, 1%)
+	>	CAP_2U2_500MIL_Tan_35V (Capacitor, 2.2 uF, TH 500mil distance between holes, Tantalum, 35V)
+	>	IND_4m7_0603 (Inductance, 4.7 mH, SMD, footprint 0603)
 
 Connectors should follow - CON_SPECIFIACTION_PINCOUNT_GENDER_DIRECTION 
 
-	Examples
+	>Examples
 	
 		CON_41612_64_F_00	(Connector DIN41612, 64 pin, female, straight (0\ |deg|\ ))
 		
-		CON_SMB_M_90		(Connector SMB, male, 90\ |deg|\  angled)
+		CON_SMB_M_90		(Connector SMB, male, 90 deg angled)
 		
-		CON_H&S_SMD_M_00	(Connector Huber&Suhner, SMD interface, male, straight (0\ |deg|\ )
+		CON_H&S_SMD_M_00	(Connector Huber&Suhner, SMD interface, male, straight (0 deg)
 		
-		CON_SUB-D25_F_90	(Connector Sub-D, 25 pins, female, 90\ |deg|\  angled )
+		CON_SUB-D25_F_90	(Connector Sub-D, 25 pins, female, 90 deg angled )
 		
 Semiconductor - TYPE
 
-	Examples
+	>Examples
 	
 		AD8512ARMZ
 		
