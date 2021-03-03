@@ -16,7 +16,7 @@
 
 	    Examples:
 		    CON_41612_64_F_00	(Connector DIN41612, 64 pin, female, straight (0\ |deg|\ ))
-		    CON_SMB_M_90		(Connector SMB, male, 90 deg angled)
+		    CON_SMB_M_90	(Connector SMB, male, 90 deg angled)
 		    CON_H&S_SMD_M_00	(Connector Huber&Suhner, SMD interface, male, straight (0 deg)
 		    CON_SUB-D25_F_90	(Connector Sub-D, 25 pins, female, 90 deg angled )
 		
