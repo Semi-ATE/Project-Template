@@ -36,6 +36,7 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 
 ### Designators of components
 
+**not final**
 - R for resistors
 - C for capacitors
 - L for inductances
@@ -55,6 +56,7 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 
 ### Symbol definitions
 
+**not final**
 As a basic principle, a symbol should be drawn in logical way (signals goes from left to right, potential from top to bottom). But exceptions are allowed;
 All pins have to be visible (e.g. no hidden power pins);
 The symbol has to show the logical name and the physical pin number;
@@ -78,10 +80,10 @@ The symbol has to show the logical name and the physical pin number;
 |:---------|:---:|:---:|:---------|
 | Board Outline | M1 | - | Data for mill out of the board |
 | Board Cutout | M2 | - | Data for inner mill out of the board |
-| Courtyard | M3 | M10 |  |
+| Courtyard | M3 | M10 | Used to define the placement space required for a component |
 | Designator | M4 | M11 | Designator of component |
 | 3D Body | M5 | M12 | 3D view of the component |
 | Component Center | M6 | M13 | Center of the component |
 | Dimensions | M7 | M14 | Additional information for board manufacturer |
-| Hard Gold | M8 | M15 | Marking of area for hard gold |
+| Gold Plating | M8 | M15 | Used to define component selective gold plating requirements |
 | Design Guides | M9 | M16 | Additional information for design process |
