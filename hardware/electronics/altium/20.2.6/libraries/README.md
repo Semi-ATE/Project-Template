@@ -37,19 +37,34 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 ### Designators of components
 
 **not final**
-- R for resistors
-- C for capacitors
-- L for inductances
-- U for Semiconductor discrete devices and integrated IC
-- D for Diodes
-- CON for Connectors 
-- Y for crystal
-- CLOCK for Oscillators
-- S for electro mechanical and SSR relays
-- SOC for sockets
-- N for nuts
-- SCR for screws
-- ST for standoffs
+
+| Designator | Component type/group |
+|:---------:|:---|
+|A|Assemblies|
+|B|Sensors of all kinds [including IC's U will be B]|
+|C|Capacitors|
+|CON|Connectors **- new proposal by DTAL**|
+|D|Diodes, Zener Diodes, Rectifiers, LEDs|
+|E|Heaters|
+|F|Fuses|
+|G|Supplies, DC/DC Converters|
+|J|Jumpers|
+|K|Relays|
+|L|Inductances|
+|M|Engines|
+|O|Oscillators, Clocks **- new proposal by DTAL**|
+|Q|Transistors, Contactors, Semiconductor Contactors, Thyristors, Triac|
+|R|Resistors,Potentiometers|
+|S|Swtiches, Switch Buttons|
+|SOC|Sockets **- new proposal by DTAL**|
+|T|Transformers|
+|TP|Test Points|
+|U|Analog, Digital and Mix ICs (A/D or D/A)|
+|W|Cables, Wires|
+|X|Connections: Plugs, Terminals|
+|Y|Crystals **- new proposal by DTAL**|
+|Z|Mechanical Fastenings|
+|-|Z for all mechanical fastenings (nuts [N], screws [SCR], standoffs [ST]) or not|
 	
 
 ## SCHEMATIC View
