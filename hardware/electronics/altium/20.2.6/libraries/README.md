@@ -43,28 +43,23 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 |A|Assemblies|
 |B|Sensors of all kinds [including IC's U will be B]|
 |C|Capacitors|
-|CON|Connectors **- new proposal by DTAL**|
 |D|Diodes, Zener Diodes, Rectifiers, LEDs|
-|E|Heaters|
 |F|Fuses|
 |G|Supplies, DC/DC Converters|
 |J|Jumpers|
 |K|Relays|
 |L|Inductances|
-|M|Engines|
-|O|Oscillators, Clocks **- new proposal by DTAL**|
 |Q|Transistors, Contactors, Semiconductor Contactors, Thyristors, Triac|
-|R|Resistors,Potentiometers|
+|R|Resistors, Potentiometers|
 |S|Swtiches, Switch Buttons|
-|SOC|Sockets **- new proposal by DTAL**|
 |T|Transformers|
 |TP|Test Points|
 |U|Analog, Digital and Mix ICs (A/D or D/A)|
 |W|Cables, Wires|
-|X|Connections: Plugs, Terminals|
+|X|Connections [Connectors, sockets], Plugs, Terminals|
 |Y|Crystals **- new proposal by DTAL**|
 |Z|Mechanical Fastenings|
-|-|Z for all mechanical fastenings (nuts [N], screws [SCR], standoffs [ST]) or not|
+| |?? for Oscillators, Clocks|
 	
 
 ## SCHEMATIC View
@@ -85,7 +80,7 @@ The symbol has to show the logical name and the physical pin number;
 - Supplier Part Number
 - Part/Component Type 
 - Datasheet *[As reference link]*
-- Supplier Infor *[As reference link]*
+- Supplier Info *[As reference link]*
 
 ## FOOTPRINT View
 
