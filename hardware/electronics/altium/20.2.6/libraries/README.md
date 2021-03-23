@@ -56,10 +56,14 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 |TP|Test Points|
 |U|Analog, Digital and Mix ICs (A/D or D/A)|
 |W|Cables, Wires|
-|X|Connections [Connectors, sockets], Plugs, Terminals|
-|Y|Crystals **- new proposal by DTAL**|
-|Z|Mechanical Fastenings|
+|X|Connections [Connectors, Sockets], Plugs, Terminals|
+|Y|Crystals **new proposal by DTAL**|
 | |?? for Oscillators, Clocks|
+|Z|Mechanical Fastenings|
+|MP| Mechanical Part (including screws and fasteners)|
+|SCR, ST, N/NT, WS| Screws, Standoffs, Nuts, Washers|
+|H| Pin headers **new proposal by DTAL**|
+|Z| Miscellaneous **new proposal by DTAL**|
 	
 
 ## SCHEMATIC View
