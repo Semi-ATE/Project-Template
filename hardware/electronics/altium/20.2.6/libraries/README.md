@@ -7,18 +7,21 @@
 - Passive components should be named following this structure - TYPE_VALUE_CASE/FOOTPRINT_*[SPECIFICATION]*
 
         Examples:
-            RES_2k7_0805 (Resistor, 2.7 k, SMD, footprint 0805)
+            RESC_2k7_0805 (Resistor, 2.7 k, SMD, footprint 0805)
             RES_1R2_0207_1% (Resistor, 1.2 Ohm, TH, footprint 0207, 1%)
+			CAPC_1n_0603_50V_1% (Capacitor, 1 n, SMD, footprint 0603, 50 V, 1 %)
             CAP_2U2_500MIL_Tan_35V (Capacitor, 2.2 uF, TH 500mil distance between holes, Tantalum, 35V)
-            IND_4m7_0603 (Inductance, 4.7 mH, SMD, footprint 0603)
+            INDC_4m7_0603 (Inductance, 4.7 mH, SMD, footprint 0603)
+			IND_4m7_5x4mm_300mA (Inductance, 4.7 mH, TH, body size 5x4mm, 300 mA)
         
-- Connectors should follow - CON_SPECIFIACTION_PINCOUNT_GENDER_DIRECTION 
+- Connectors should follow - CON_TYPE_PINCOUNT_GENDER_DIRECTION_FAMILY
 
 	    Examples:
-		    CON_41612_64_F_00	(Connector DIN41612, 64 pin, female, straight (0\ |deg|\ ))
-		    CON_SMB_M_90	(Connector SMB, male, 90 deg angled)
-		    CON_H&S_SMD_M_00	(Connector Huber&Suhner, SMD interface, male, straight (0 deg)
-		    CON_SUB-D25_F_90	(Connector Sub-D, 25 pins, female, 90 deg angled )
+		    CON_TH_64_F_00_41612	(Connector, 64 pin, female, straight (0\ |deg|\ ), DIN41612 Family)
+			CON_TH_64_F_00_41612_LL	(Connector, 64 pin, female, straight (0\ |deg|\ ), DIN41612 Family, Long leads)
+		    CON_SMD_120_F_00_ERF8 	(Connector, 120 pin, female, straight (0\ |deg|\ ), Samtec ERF8 Family)
+		    CON_PF_120_M_00_ERNI	(Connector, 120 pin, male, straight (0 deg), ERNI Family)
+		    CON_TH_25_F_90_DSUB		(Connector, 25 pins, female, 90 deg angled, DSUB)
 		
 - Semiconductor - TYPE
 
@@ -28,7 +31,12 @@
 		    LED_1MM8_GN (LED, throughhole 100mil distance between holes, green)
 
 - Other - Depending on case
-
+	    
+		Examples to discuss:
+		    Relay MECH - 118-1-A-5/2D or REL_118-1-A-5/2D
+		    Relay SSR - G3VM-61HR1 or SSR_G3VM-61HR1
+		    Cyrstal - XTAL_TH_65M_7x3mm
+					- XTAL_SMD_25M_5x3.2mm
 
 ### Naming of footprints
 
