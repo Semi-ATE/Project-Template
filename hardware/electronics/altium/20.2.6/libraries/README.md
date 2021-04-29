@@ -43,28 +43,28 @@ IPC-7351 standard is used for SMT. For TH components we stay as close to the sta
 
 ### Designators of components
 
-| Designator | Component type/group |
-|:---------:|:---|
-|A|**Assemblies**|
-|B|**Sensors** of all kinds [including IC's U will be B]|
-|C|**Capacitors**|
-|D|**Diodes**, Zener Diodes, Rectifiers, LEDs|
-|F|**Fuses**|
-|G|**Supplies**, DC/DC Converters|
-|J|**Jumpers**|
-|K|**Relays**|
-|L|**Inductances**|
-|MP|**Mechanical_Parts** Part (including screws and fasteners)|
-|Q|**Transistors**, Contactors, Semiconductor Contactors, Thyristors, Triac|
-|R|**Resistors**, Potentiometers|
-|S|**Swtiches**, Switch Buttons|
-|T|**Transformers**|
-|TP|**Test Points**|
-|U|**IC** Analog, Digital and Mix ICs (A/D or D/A), Oscillators, Clocks|
-|W|Cables, Wires|
-|X|**Connections** [Connectors, Sockets], Plugs, Terminals|
-|Y|**Crystals**|
-|Z|**Miscellaneous**|
+| Designator | Component type/group | Library Name (.SCHLIB)|
+|:---:|:---|:---|
+|A|Assemblies|Assemblies|
+|B|Sensors of all kinds [including IC's U will be B]|Sensors|
+|C|Capacitors|Capacitors|
+|D|Diodes, Zener Diodes, Rectifiers, LEDs|Dopdes|
+|F|Fuses|Fuses|
+|G|Supplies, DC/DC Converters|Supplies|
+|J|Jumpers|Jumpers|
+|K|Relais|Relais|
+|L|Inductances|Inductances|
+|MP|Mechanical_Parts Part (including screws and fasteners)|Mechanical_Parts|
+|Q|Transistors, Contactors, Semiconductor Contactors, Thyristors, Triac|Transistors|
+|R|Resistors, Potentiometers|Resistors|
+|S|Swtiches, Switch Buttons|Switches|
+|T|Transformers|Transformers|
+|TP|Test Points|Test Points|
+|U|Analog, Digital and Mix ICs (A/D or D/A), Oscillators, Clocks|Integrated_Curcuits|
+|W|Cables, Wires|-|
+|X|Connections [Connectors, Sockets], Plugs, Terminals|Connections|
+|Y|Crystals|Cyrstals|
+|Z|Miscellaneous|Miscellaneous|
 
 ## SCHEMATIC View
 
