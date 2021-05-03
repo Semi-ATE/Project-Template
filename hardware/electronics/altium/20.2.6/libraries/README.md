@@ -1,6 +1,6 @@
 # Semi-ATE Altium Libraries
 
-![https://img.shields.io/badge/Status-Alpha-red]
+![Status](https://img.shields.io/badge/Status-Alpha-red)
 
 ## GENERAL
 
