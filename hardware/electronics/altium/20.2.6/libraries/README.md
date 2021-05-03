@@ -1,8 +1,6 @@
 # Semi-ATE Altium Libraries
 
-```ruby
-UNDER_CONSTRICTION
-```
+https://img.shields.io/badge/Status-Alpha-red
 
 ## GENERAL
 
