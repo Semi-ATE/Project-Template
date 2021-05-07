@@ -57,7 +57,7 @@
 |J|Jumpers|Jumpers|
 |K|Relais|Relais|
 |L|Inductances|Inductances|
-|MP|Mechanical_Parts Part (including screws and fasteners)|Mechanical_Parts|
+|MP|Mechanical Part (including screws and fasteners)|Mechanical_Parts|
 |Q|Transistors, Contactors, Semiconductor Contactors, Thyristors, Triac|Transistors|
 |R|Resistors, Potentiometers|Resistors|
 |S|Swtiches, Switch Buttons|Switches|
