@@ -30,8 +30,8 @@
 - Cyrstals
 
 		Examples
-		 12M000_SMD_6x3.5mm_10ppm (Crystal, SMD, 6x3.5mm, 10ppm)
-		 65000k_TH_7x3mm (Crystal, TH, 7x3mm)
+		 12M000_SMD_6x3.5mm_10ppm (Crystal; SMD; 6x3.5mm; 10ppm)
+		 65000k_TH_7x3mm (Crystal; TH; 7x3mm)
 		
 - Semiconductor, Relais - TYPE *[MFG P/N]*
 
@@ -44,14 +44,14 @@
 - Mechanical - TYPE_*[SPECIFICATION (e.g. SMD/TH, Thread, Length)]*
 
 	    Examples:
-         STANDOFF_SMD_M3_12MM_F-F_BRASS (Standoff, SMD, M3, 12mm, female-female, Brass)
-		 NUT_M3_STEEL (Nut, M3, Steel)
-		 SCREW_HEX_CAP_M3_6MM_STEEL (Screw, Hexagon Cap, M3, 6mm, Steel)
+         STANDOFF_SMD_M3_12MM_F-F_BRASS (Standoff; SMD; M3; 12mm; female-female; Brass)
+		 NUT_M3_STEEL (Nut; M3; Steel)
+		 SCREW_HEX_CAP_M3_6MM_STEEL (Screw; Hexagon Cap; M3; 6mm; Steel)
 
 - Other - Depending on case
 	    
 	    Examples:
-         LED_GN_MFGPN (LED, Green, MFG P/N)
+         LED_GN_MFGPN (LED; Green; MFG P/N)
 
 ### Naming of footprints
 
@@ -125,8 +125,9 @@
 
 ### Mechanical Layers Drawing Specifications
 
-- Board Outline/Cutout line width - 0.15-0.2mm;
-- Courtyard, Component Center/Outline and other - 0.05mm;
-- Couyryard to be 0.1mm larger than the 3D Body (Component Outline) - distance measured between the edge of the outline and the edge of the courtyard line should be 0.075mm;
-- Designator text to fit inside the component outline;
-- Gold Plating to explain specific surface finish requirements (e.g. hard gold finish on dedicated landing areas and pads);
+- *Board Outline* and *Board Cutout* line width - 0.15-0.2mm;
+- *Courtyard*, *Component Center*, *Component Outline* and other line width - 0.05mm;
+- *Courtyard* to be **0.1mm** larger than the footprint (depending on the case - either the component body or the edge of the pads) - distance measured between the edge of the *pad* or *component outline* and the edge of the *courtyard line* should be **0.075mm**;
+- *Component Center* should show midpoint of component.
+- *Designator* text to fit inside the component outline;
+- *Gold Plating* is to explain specific surface finish requirements (e.g. hard gold finish on dedicated landing areas and pads);
