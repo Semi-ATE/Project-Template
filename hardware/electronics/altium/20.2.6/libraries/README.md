@@ -9,21 +9,29 @@
 - Passive components should be named following this structure - VALUE_CASE/FOOTPRINT_*[SPECIFICATION (e.g. Tolerance, Voltage)]*
 
         Examples:
-		 2k7_0805 (Resistor, 2.7 k, SMD, footprint 0805)
-		 1R2_0207_1% (Resistor, 1.2 Ohm, TH, footprint 0207, 1%)
-		 1n_0603_50V_1% (Capacitor, 1 n, SMD, footprint 0603, 50 V, 1 %)
-		 2U2_500MIL_Tan_35V (Capacitor, 2.2 uF, TH 500mil distance between holes, Tantalum, 35V)
-		 4m7_0603 (Inductance, 4.7 mH, SMD, footprint 0603)
-		 4m7_5x4mm_300mA (Inductance, 4.7 mH, TH, body size 5x4mm, 300 mA)
+		 2u2_0603_6.3V_X7R_10% (Capacitor; Ceramic; 2.2u; 0603; 6.3V; X7R; 10%; -55°C ~ 125°C)
+		 330p_0603_50V_C0G/NP0_5% (Capacitor; Ceramic; 330p; 0603; 50V; C0G/NP0; 5%; -55°C ~ 125°C)
+		 100R_0402_63mW_1%_100ppm (Resistor; Chip; 100R; 0402; 50V; 1%; 100ppm; 63mW; -55°C ~ 155°C)
+		 48R7_0805_125mW_0.1%_25ppm (Resistor; Chip; 48.7R; 0805; 150V; 0.1%; 25ppm; 125mW; -55°C ~ 155°C)
+		 2u2_0805_300mA_5%_125C (Inductance; 2.2uH; SMD; 0805; 300mA; 5%; 125°C)
+		 2u2_5x4mm_300mA_5%_125C (Inductance; 2.2uH; TH; Body 5x4mm; 300mA; 5%; 125°C)
         
 - Connectors should follow - CON_TYPE_PINCOUNT_GENDER_DIRECTION_FAMILY
 
 	    Examples:
-	     CON_TH_64_F_00_41612 (Connector, 64 pin, female, straight (0\ |deg|\ ), DIN41612 Family)
-	     CON_TH_64_F_00_41612_LL (Connector, 64 pin, female, straight (0\ |deg|\ ), DIN41612 Family, Long leads)
-	     CON_SMD_120_F_00_ERF8 (Connector, 120 pin, female, straight (0\ |deg|\ ), Samtec ERF8 Family)
-	     CON_PF_120_M_00_ERNI (Connector, 120 pin, male, straight (0 deg), ERNI Family)
-	     CON_TH_25_F_90_DSUB (Connector, 25 pins, female, 90 deg angled, DSUB)
+	     CON_TH_64_F_00_41612 (Connector; 64 pins; female; straight (0\ |deg|\ ); DIN41612 Family)
+	     CON_TH_64_F_00_41612_LL (Connector; 64 pins; female; straight (0\ |deg|\ ); DIN41612 Family; Long leads)
+	     CON_SMD_120_F_00_ERF8 (Connector; 120 pins; female, straight (0\ |deg|\ ); Samtec ERF8 Family)
+	     CON_PF_120_M_00_ERNI (Connector; 120 pins; male; straight (0 deg); ERNI Family)
+	     CON_TH_25_F_90_DSUB (Connector; 25 pins; female; 90 deg angled; DSUB)
+		 HDR_TH_1X25_M_00 (Header; 1x25 pins; male; straight (0\ |deg|\ ))
+		 HDR_SMD_2X25_M_90_1.27mm (Header; 2x25 pins; male; 90 deg angled; 1.27mm pitch)
+
+- Cyrstals
+
+		Examples
+		 12M000_SMD_6x3.5mm_10ppm (Crystal; SMD; 6x3.5mm; 10ppm)
+		 65000k_TH_7x3mm (Crystal; TH; 7x3mm)
 		
 - Semiconductor, Relais - TYPE *[MFG P/N]*
 
@@ -32,12 +40,18 @@
          AD8221ARM
          118-1-A-5/2D
          G3VM-61HR1
+		 
+- Mechanical - TYPE_*[SPECIFICATION (e.g. SMD/TH, Thread, Length)]*
+
+	    Examples:
+         STANDOFF_SMD_M3_12MM_F-F_BRASS (Standoff; SMD; M3; 12mm; female-female; Brass)
+		 NUT_M3_STEEL (Nut; M3; Steel)
+		 SCREW_HEX_CAP_M3_6MM_STEEL (Screw; Hexagon Cap; M3; 6mm; Steel)
 
 - Other - Depending on case
 	    
 	    Examples:
-         LED_1MM8_GN (LED, through-hole 100mil distance between holes, green)
-         Cyrstal - 65M_7x3mm
+         LED_GN_MFGPN (LED; Green; MFG P/N)
 
 ### Naming of footprints
 
@@ -109,7 +123,6 @@
 | Gold Plating | M9 | M17 | Used to define component selective gold plating requirements |
 | Design Guides | M10 | M18 | Additional information for design process |
 
-
 ## FONT
 
 preferences in altium ?
@@ -118,3 +131,12 @@ preferences in altium ?
 ## Discussion
 
 Courtyard on mechanical parts ?!?
+
+### Mechanical Layers Drawing Specifications
+
+- *Board Outline* and *Board Cutout* line width - 0.15-0.2mm;
+- *Courtyard*, *Component Center*, *Component Outline* and other line width - 0.05mm;
+- *Courtyard* to be **0.1mm** larger than the footprint (depending on the case - either the component body or the edge of the pads) - distance measured between the edge of the *pad* or *component outline* and the edge of the *courtyard line* should be **0.075mm**;
+- *Component Center* should show midpoint of component.
+- *Designator* text to fit inside the component outline;
+- *Gold Plating* is to explain specific surface finish requirements (e.g. hard gold finish on dedicated landing areas and pads);
