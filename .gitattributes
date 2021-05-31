@@ -8,5 +8,6 @@
 *.DsnWrk binary
 *.PcbLib binary
 *.SchLib binary
+*.PrjPcb binary
 *.BomDoc text eol=crlf
 *.OutJob text eol=crlf

@@ -114,14 +114,23 @@
 |:---------|:---:|:---:|:---------|
 | Board Outline | M1 | - | Data for mill out of the board |
 | Board Cutout | M2 | - | Data for inner mill out of the board |
-| Courtyard | M3 | M11 | Used to define the placement space required for a component |
+| Courtyard | M3 | M11 | Used to define the placement space required for a component | --> 0.075mm wider (center line) than the component outline
 | Designator | M4 | M12 | Designator of component |
 | 3D Body | M5 | M13 | 3D view of the component |
-| Component Center | M6 | M14 | Center of the component |
-| Component Outline | M7 | M15 | Outline of the component body |
+| Component Center | M6 | M14 | Center of the component | --> 'center of gravity' of the solder pads
+| Component Outline | M7 | M15 | Outline of the component body | 
 | Dimensions | M8 | M16 | Additional information for board manufacturer |
 | Gold Plating | M9 | M17 | Used to define component selective gold plating requirements |
 | Design Guides | M10 | M18 | Additional information for design process |
+
+## FONT
+
+preferences in altium ?
+--> Arial Narrow 10 ?!?
+
+## Discussion
+
+Courtyard on mechanical parts ?!?
 
 ### Mechanical Layers Drawing Specifications
 
