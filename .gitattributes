@@ -27,14 +27,14 @@
 *.SWF binary
 
 # compressed files
-*.gz binary
-*.GZ binary
-*.tgz binary
-*.TGZ binary
-*.zip binary
-*.ZIP binary
-*.7z binary
-*.7Z binary
+*.gz binary filter=lfs
+*.GZ binary filter=lfs
+*.tgz binary filter=lfs
+*.TGZ binary filter=lfs
+*.zip binary filter=lfs
+*.ZIP binary filter=lfs
+*.7z binary filter=lfs
+*.7Z binary filter=lfs
 
 # MS Word
 *.docx binary
