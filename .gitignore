@@ -47,7 +47,6 @@ Desktop.ini
 *.PrjPCBStructure
 *.SchDocPreview
 *.PcbDocPreview
-__Previews
 *.PrjPcbStructure
 *.Dat
 *.REP 
@@ -56,11 +55,12 @@ __Previews
 *.log
 *.htm
 *.$$$
+**/__Previews*
+**/History*
 #useless dirs
 Project\ Outputs
 Project\ Logs
 Project Outputs for*
-History
 exports/*
 !exports/manual
 
