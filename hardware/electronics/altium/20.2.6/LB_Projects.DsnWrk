@@ -1,0 +1,6 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=MiniSCT-LB\MiniSCT-LB.PrjPcb
+[Project2]
+ProjectPath=MaxiSCT-LB\MaxiSCT-LB.PrjPcb
