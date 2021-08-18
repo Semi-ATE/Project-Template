@@ -13,31 +13,35 @@
 		 330p_0603_50V_C0G/NP0_5% (Capacitor; Ceramic; 330p; 0603; 50V; C0G/NP0; 5%; -55°C ~ 125°C)
 		 100R_0402_63mW_1%_100ppm (Resistor; Chip; 100R; 0402; 50V; 1%; 100ppm; 63mW; -55°C ~ 155°C)
 		 48R7_0805_125mW_0.1%_25ppm (Resistor; Chip; 48.7R; 0805; 150V; 0.1%; 25ppm; 125mW; -55°C ~ 155°C)
-		 2u2_0805_300mA_5%_125C (Inductance; 2.2uH; SMD; 0805; 300mA; 5%; 125°C)
-		 2u2_5x4mm_300mA_5%_125C (Inductance; 2.2uH; TH; Body 5x4mm; 300mA; 5%; 125°C)
+		 INDC_56n_0603_360mA_5% (Inductance; Chip; 56nH; 0603; 360mA; 5%)
+		 INDM_2u2_5.28x5.48mm_9.2A_20% (Inductance; Molded; 2.2uH; SMD; Body 5.28x5.48mm; 9.2A; 20%)
+		 FB_Z110_0603 (Ferrite Bead; Z=110R; 1 Line; DCR=20mR; 0603)
         
 - Connectors should follow - CON_TYPE_PINCOUNT_GENDER_DIRECTION_FAMILY
 
 	    Examples:
-	     CON_TH_64_F_00_41612 (Connector; 64 pins; female; straight (0\ |deg|\ ); DIN41612 Family)
-	     CON_TH_64_F_00_41612_LL (Connector; 64 pins; female; straight (0\ |deg|\ ); DIN41612 Family; Long leads)
-	     CON_SMD_120_F_00_ERF8 (Connector; 120 pins; female, straight (0\ |deg|\ ); Samtec ERF8 Family)
-	     CON_PF_120_M_00_ERNI (Connector; 120 pins; male; straight (0 deg); ERNI Family)
-	     CON_TH_25_F_90_DSUB (Connector; 25 pins; female; 90 deg angled; DSUB)
-		 HDR_TH_1X25_M_00 (Header; 1x25 pins; male; straight (0\ |deg|\ ))
-		 HDR_SMD_2X25_M_90_1.27mm (Header; 2x25 pins; male; 90 deg angled; 1.27mm pitch)
+	     CON_TH_64_F_00_41612 (Connector; DIN41612 Family; 64 pins; Female; Straight (0\ |deg|\ ))
+	     CON_TH_64_F_00_41612_LL (Connector; DIN41612 Family; 64 pins; Female; Straight (0\ |deg|\ ); Long leads)
+	     CON_SMD_120_F_00_ERF8 (Connector; 120 pins; Female, Straight (0\ |deg|\ ); Samtec ERF8 Family)
+	     CON_PF_120_M_00_ERNI (Connector; 120 pins; Male; Straight (0 deg); ERNI Family)
+	     CON_TH_25_F_90_DSUB (Connector; DSUB; 25 pins; Female; 90 deg angled)
+		 HDR_TH_1X25_M_00 (Header; 1x25 pins; Male; Straight (0\ |deg|\ ); Pitch 2.54mm)
+		 HDR_SMD_2X25_M_90_1.27mm (Header; 2x25 pins; Male; 90 deg angled; Pitch 1.27mm)
 
-- Cyrstals
+- Crystals
 
 		Examples
 		 12M000_SMD_6x3.5mm_10ppm (Crystal; SMD; 6x3.5mm; 10ppm)
 		 65000k_TH_7x3mm (Crystal; TH; 7x3mm)
 		
-- Semiconductor, Relais - TYPE *[MFG P/N]*
+- Semiconductors (ICs, Diodes, Transistors, Sensors, Supplies, etc.), Relays - TYPE *[MFG P/N]*
 
 	    Examples:
          AD8512ARMZ
          AD8221ARM
+		 NSBA144EF3T5G
+		 TMP461AIRUNR-S
+		 PMEG4010EJ,115
          118-1-A-5/2D
          G3VM-61HR1
 		 
@@ -52,6 +56,9 @@
 	    
 	    Examples:
          LED_GN_MFGPN (LED; Green; MFG P/N)
+		 BATTERY_HOLDER_KEYSTONE_502 (Connection; Battery Holder; Coin; 16mm; Through Hole)
+		 TP_SMD_1mm (Test Point, SMD Pad, 1 mm)
+		 TP_TH_1.6mm_BLACK (Test Point, TH, Black, 1.6mm hole)
 
 ### Naming of footprints
 
@@ -69,44 +76,58 @@
 |F|Fuses|Fuses|
 |G|Supplies, DC/DC Converters|Supplies|
 |J|Jumpers|Jumpers|
-|K|Relais|Relais|
+|K|Mechanical Relays|Relays|
 |L|Inductances|Inductances|
 |MP|Mechanical Part (including screws and fasteners)|Mechanical_Parts|
 |Q|Transistors, Contactors, Semiconductor Contactors, Thyristors, Triac|Transistors|
 |R|Resistors, Potentiometers|Resistors|
-|S|Swtiches, Switch Buttons|Switches|
+|S|Mechanical Switches and Buttons|Switches|
 |T|Transformers|Transformers|
 |TP|Test Points|Test_Points|
-|U|Analog, Digital and Mix *[A/D or D/A]* ICs, Oscillators, Clocks|Integrated_Curcuits|
-|W|Cables, Wires|-|
+|U|Analog, Digital and Mix *[A/D or D/A]* ICs, Solid State Relays, Oscillators, Clocks|Integrated_Circuits|
+|XA|Addons [Cables, Wires and Accessories]|Addons|
 |X|Connections *[Connectors, Sockets]*, Plugs, Terminals|Connections|
-|Y|Crystals|Cyrstals|
+|Y|Crystals|Crystals|
 |Z|Miscellaneous|Miscellaneous|
 
 ## SCHEMATIC View
 
 ### Symbol definitions
 
-***not final - under constriction***
-
 - As a basic principle, a symbol should be drawn in logical way (signals goes from left to right, potential from top to bottom - inputs on the left, outputs on the right, power on top and ground on bottom). But exceptions are allowed;
 - All pins have to be visible (e.g. no hidden power pins);
 - The symbol has to show the logical name and the physical pin number;
-- Schematic view for ICs ...
-- 
+- Schematic view for ICs and similar component types:
+   = Function block as a separate subgroup;
+   = Power pins block are dedicated subgroup;
+   = Communication pins (if available) can be included with the power pins subgroup;
+   = Exposed Pad (EP) to be included in the power pins subpart.
+- Everything is drawn in a 100 mil grid. Pitch between pads is also on this grid.
 
+## FONT
+
+Preferred font on all visible texts in components is *"Arial Narrow" with size 10*
 
 ### Standard parameters
 
-- Value *[for passive components is the value, for active is the MFG P/N]*
 - Manufacturer
 - Manufacturer Part Number
 - Supplier
 - Supplier Part Number
+- Value *[for passive components is the value, for active is the MFG P/N]* - **This parameter is visible on the schematic**
 - Datasheet *[As reference link]*
 - Supplier Info *[As reference link]*
 
 ## FOOTPRINT View
+
+### Symbol definitions
+
+- Pin 1 orientation - top left;
+- Pin shapes - 1st pin to be rectangular and other pins to be rounded rectangular;
+- Solder Mask opening/clearance - 50um by default unless otherwise requested;
+- Paste Mask - same as pad size unless otherwise requested;
+- First pin marking to be available in the courtyard layer as well;
+- 3D body should be available for all footprints. If a STEP model is not available add a basic (rectangular) model;
 
 ### Mechanical Layers
 
@@ -114,29 +135,21 @@
 |:---------|:---:|:---:|:---------|
 | Board Outline | M1 | - | Data for mill out of the board |
 | Board Cutout | M2 | - | Data for inner mill out of the board |
-| Courtyard | M3 | M11 | Used to define the placement space required for a component | --> 0.075mm wider (center line) than the component outline
+| Courtyard | M3 | M11 | Used to define the placement space required for a component |
 | Designator | M4 | M12 | Designator of component |
 | 3D Body | M5 | M13 | 3D view of the component |
-| Component Center | M6 | M14 | Center of the component | --> 'center of gravity' of the solder pads
+| Component Center | M6 | M14 | Center of the component |
 | Component Outline | M7 | M15 | Outline of the component body | 
 | Dimensions | M8 | M16 | Additional information for board manufacturer |
 | Gold Plating | M9 | M17 | Used to define component selective gold plating requirements |
 | Design Guides | M10 | M18 | Additional information for design process |
 
-## FONT
-
-preferences in altium ?
---> Arial Narrow 10 ?!?
-
-## Discussion
-
-Courtyard on mechanical parts ?!?
-
 ### Mechanical Layers Drawing Specifications
 
 - *Board Outline* and *Board Cutout* line width - 0.15-0.2mm;
-- *Courtyard*, *Component Center*, *Component Outline* and other line width - 0.05mm;
-- *Courtyard* to be **0.1mm** larger than the footprint (depending on the case - either the component body or the edge of the pads) - distance measured between the edge of the *pad* or *component outline* and the edge of the *courtyard line* should be **0.075mm**;
-- *Component Center* should show midpoint of component.
-- *Designator* text to fit inside the component outline;
+- *Courtyard*, *Component Center*, *Component Outline* and others line width - 0.05mm;
+- *Courtyard* to be **0.1mm** larger than the footprint (depending on the case - either the component body or the edge of the pads) - distance measured between the edge of the *pad* or *component outline* and the edge of the *courtyard line* should be **0.075mm**.
+On angled components, the are should be around the mounting area on the PCB;
+- *Component Center* should show midpoint of component. For angled components it should be in the center of the mounting area;
+- *Designator* text to fit inside the component outline and 4 digits centered to be inside the courtyard;
 - *Gold Plating* is to explain specific surface finish requirements (e.g. hard gold finish on dedicated landing areas and pads);
