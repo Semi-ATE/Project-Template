@@ -1,7 +1,5 @@
 # Semi-ATE Altium Libraries
 
-![Status](https://img.shields.io/badge/Status-Alpha%20(under%20construction)-red)
-
 ## GENERAL
 
 ### Naming of components
