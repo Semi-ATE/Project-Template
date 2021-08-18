@@ -1,5 +1,7 @@
 # Semi-ATE Altium Libraries
 
+![Status](https://img.shields.io/badge/Status-Alpha%20(under%20construction)-red)
+
 ## GENERAL
 
 ### Naming of components
@@ -151,3 +153,8 @@ On angled components, the are should be around the mounting area on the PCB;
 - *Component Center* should show midpoint of component. For angled components it should be in the center of the mounting area;
 - *Designator* text to fit inside the component outline and 4 digits centered to be inside the courtyard;
 - *Gold Plating* is to explain specific surface finish requirements (e.g. hard gold finish on dedicated landing areas and pads);
+
+
+
+---
+*For more information or questions - Daniel Talev [dtal@semi-ate.com]*
