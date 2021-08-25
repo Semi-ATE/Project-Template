@@ -155,4 +155,4 @@ On angled components, the are should be around the mounting area on the PCB;
 
 
 ---
-*For more information or questions - Daniel Talev [dtal@semi-ate.com]*
+*For more information or questions - Daniel [dtal@semi-ate.com]*
