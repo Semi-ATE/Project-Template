@@ -232,30 +232,34 @@ Name=Project_Title
 Value=
 
 [Parameter2]
+Name=Project_Revision
+Value==MajorRevision+'.'+MinorRevision
+
+[Parameter3]
 Name=Engineer_Review
 Value=
 
-[Parameter3]
+[Parameter4]
 Name=Engineer_Drawn
 Value=
 
-[Parameter4]
+[Parameter5]
 Name=Engineer_Design
 Value=
 
-[Parameter5]
+[Parameter6]
 Name=Document_No
 Value=
 
-[Parameter6]
+[Parameter7]
 Name=Date_Reviewed
 Value=
 
-[Parameter7]
+[Parameter8]
 Name=Date_Drawn
 Value=
 
-[Parameter8]
+[Parameter9]
 Name=Date_Designed
 Value=
 
